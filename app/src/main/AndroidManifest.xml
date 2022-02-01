@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.Gestion_Scolarite">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Gestion de Scolarité"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mini_Projet_1">
+        <activity
+            android:name="com.example.Gestion_Scolarite.all_bulletins"
+            android:exported="false"
+            android:label="Students Bulletins"
+            android:parentActivityName="com.example.Gestion_Scolarite.GestionNotes"/>
+        <activity
+            android:name="com.example.Gestion_Scolarite.all_students"
+            android:exported="false"
+            android:label="Students List"
+            android:parentActivityName="com.example.Gestion_Scolarite.GestionEtudiants" />
+        <activity
+            android:name="com.example.Gestion_Scolarite.GestionFiliere"
+            android:exported="false"
+            android:label="Gestion des Filière et Modules"
+            android:parentActivityName="com.example.Gestion_Scolarite.MainActivity" />
+        <activity
+            android:name="com.example.Gestion_Scolarite.GestionNotes"
+            android:exported="false"
+            android:label="Gestion des Notes"
+            android:parentActivityName="com.example.Gestion_Scolarite.MainActivity" />
+        <activity
+            android:name="com.example.Gestion_Scolarite.GestionEtudiants"
+            android:exported="false"
+            android:label="Gestion des Etudiants"
+            android:parentActivityName="com.example.Gestion_Scolarite.MainActivity" />
+        <activity
+            android:name="com.example.Gestion_Scolarite.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
